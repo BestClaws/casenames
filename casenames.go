@@ -4,7 +4,7 @@ import (
 	"unicode"
 )
 
-func caseNames(input string) []string {
+func CaseNames(input string) []string {
 	var words []string
 	start := 0
 	length := 0

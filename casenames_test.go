@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test_caseNames(t *testing.T) {
+func Test_CaseNames(t *testing.T) {
 	type args struct {
 		input string
 	}
@@ -26,7 +26,7 @@ func Test_caseNames(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := caseNames(tt.args.input); !reflect.DeepEqual(got, tt.want) {
+			if got := CaseNames(tt.args.input); !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("caseNames() = %v, want %v", got, tt.want)
 			}
 		})
